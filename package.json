@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/a-team/",
+    "build": "vite build --base=/wf_amhran_html/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,7 +14,6 @@
     "prettier": "^3.0.3",
     "vite": "^4.0.5"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "swiper": "^10.2.0",

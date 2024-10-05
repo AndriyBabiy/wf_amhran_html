@@ -1,0 +1,211 @@
+.hero.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+/* @media only screen and (max-width: 374px) {
+  .hero.section {
+    max-width: 100%;
+  }
+} */
+
+/* @media only screen and (min-width: 1280px) {
+  .hero.section {
+    padding-bottom: 21px;
+  }
+} */
+
+@media only screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-mobile@2x.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/wf-amhran.png');
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-tablet@2x.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-desktop.jpg');
+  }
+}
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg-desktop@2x.jpg');
+  }
+}
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 280px;
+  height: 440px;
+  padding: 20px;
+  padding-bottom: 72px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+
+  background-image: linear-gradient(
+      357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
+    ),
+    url('../img/hero/wf-amhran.png');
+}
+
+@media screen and (min-width: 375px) {
+  .hero-container {
+    width: 340px;
+    height: 530px;
+    padding: auto 32px 295px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    width: 600px;
+    height: 920px;
+    padding: auto 32px 295px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    min-width: 1152px;
+    padding: 164px 32px 163px 64px;
+  }
+}
+
+.hero-header {
+  max-width: 295px;
+  margin-bottom: 20px;
+  text-align: left;
+
+  font-size: 38px;
+  line-height: 1.05;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    max-width: 488px;
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-header {
+    max-width: 584px;
+  }
+}
+
+.hero .hero-button {
+  min-width: auto;
+  width: 100%;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-button {
+    padding: 16px;
+    max-width: 306px;
+  }
+}
+
+.scroll-to-bottom {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  border: none;
+  background-color: var(--white);
+  transition: background-color var(--animation-fast);
+}
+@media screen and (min-width: 768px) {
+  .scroll-to-bottom {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.scroll-to-bottom:hover,
+.scroll-to-bottom:focus {
+  background-color: var(--green);
+}
+
+.scroll-to-bottom-icon {
+  fill: var(--green);
+  transition: fill var(--animation-fast);
+}
+@media screen and (min-width: 768px) {
+  .scroll-to-bottom-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.scroll-to-bottom:hover .scroll-to-bottom-icon,
+.scroll-to-bottom:focus .scroll-to-bottom-icon {
+  fill: var(--white);
+}
